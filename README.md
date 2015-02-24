@@ -18,7 +18,7 @@ Translations
  Use Babel's gettext: 
 
  `from flask.ext.babel import gettext`
- `gettext('Hello')`
+ `gettext('Bonjour')`
 
 3. Update translation files: `bash babel-update.sh`
 

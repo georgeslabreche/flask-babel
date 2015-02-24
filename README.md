@@ -11,6 +11,9 @@ Getting Started
 
 Translations
 ============
+Translations are already set and compiled.
+In case you want to redo it yourself or add more text to translate:
+
 1. In Jinja2
 `{{ _('Bonjour') }}`
 
@@ -22,7 +25,7 @@ Translations
 
 3. Update translation files: `bash babel-update.sh`
 
-4. Set translations in .po file: `translations/en/LC_MESSAGES/messages.po`
+4. Set translations in english .po file: `translations/en/LC_MESSAGES/messages.po`
 
 5. Compile translations: `bash babel-compile.sh`
 

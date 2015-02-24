@@ -24,28 +24,21 @@ def create_app():
 
 # Views for Page rendering
 from views.index import Index
+from views.hello import Hello
 
 
 def register_url_rules(app):
     ''' Register URLs
     :param app: The Flask application instance.
     '''
-    # Register the URL rules for JSON requests.
-    register_json_url_rules(app)
-
-    # Register the URL rules for page requests.
-    register_page_url_rules(app)
-
-
-def register_json_url_rules(app):
-    pass;
-
-
-def register_page_url_rules(app):
-    ''' Register the URL rules for page requests.
-    :param app: The Flask application instance.
-    '''
     # Index.
     app.add_url_rule(
         '/',
         view_func=Index.as_view('index'))
+
+    # Index.
+    app.add_url_rule(
+        '/hello',
+        view_func=Hello.as_view('hello'))
+
+    

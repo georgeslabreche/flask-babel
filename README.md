@@ -30,15 +30,17 @@ Translations
 
 Note
 ====
-Getting the locale to translate has been hardced to english (i.e. "en").
-The get_locales function fires as expected but translation doesn't actually occur
+Getting the locale to translate to has been hardced to english (i.e. "en").
+The get_locales function fires as expected but translation doesn't actually occur.
 See \_\_init\_\_.py:
 
 `@babel.localeselector`
 `def get_locale():`
   `return 'en'`
 
-We should be seeing "Hello" instead of "Bonjour".
+We should be seeing "Hello" instead of "Bonjour":
+For the index page that uses a template: http://127.0.0.1:5555/
+For the hello page that just returns a string: http://127.0.0.1:5555/hello
 
 
 
